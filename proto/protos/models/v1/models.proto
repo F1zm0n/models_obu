@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package models.v1;
+
+option go_package = "github.com/F1zm0n/tolling/models";
+
+message AggregatorRequest{
+    int32 ObuID = 1;
+    double Value = 2;
+    int64 Unix = 3;
+};
+
+message None{};
+
+service DistanceAggregator{
+rpc AggregateDistance (AggregatorRequest) returns (None);
+}
