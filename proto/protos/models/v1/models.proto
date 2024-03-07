@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package models.v1;
+package aggregators.v1;
 
-option go_package = "github.com/F1zm0n/tolling/models";
+option go_package = "github.com/F1zm0n/models_obu/aggregators.v1";
 
 message AggregatorRequest{
     int32 ObuID = 1;
